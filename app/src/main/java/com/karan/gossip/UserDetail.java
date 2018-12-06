@@ -13,7 +13,7 @@ public class UserDetail extends AppCompatActivity {
     String Name;
     EditText nameEditText;
 
-    public void OnClick(View view){
+    public void sendName(View view){
         Name = nameEditText.getText().toString();
         Intent mIntent = new Intent(this, MainActivity.class);
         mIntent.putExtra("Name", Name);
